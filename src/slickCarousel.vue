@@ -25,8 +25,8 @@ export default {
     this.create();
   },
 
-  destroyed: function() {
-    $(this.$el).slick('unslick');
+  destroyed() {
+    setTimeout(function(){ $(this.$el).slick('unslick'); }, 3000);
   },
 
   methods: {
